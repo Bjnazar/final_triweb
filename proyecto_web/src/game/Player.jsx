@@ -42,7 +42,7 @@ function Player() {
       let game_id = idPartida;
       let player_id = null;
       if (createGame) {
-        const gameResponse = await axios.post('${import.meta.env.VITE_BACKEND_URL}/games/newgame', {});
+        const gameResponse = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/games/newgame`, {});
         game_id = gameResponse.data.id;
         setIdPartida(game_id); // Actualizar el ID de la partida con el nuevo ID
       }
