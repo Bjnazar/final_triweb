@@ -1,0 +1,18 @@
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* width: 175vh; */
+    background-color: #D5DCF6;
+    background-attachment: fixed;
+    padding: 0 5vh; 
+}
+

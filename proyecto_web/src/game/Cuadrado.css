@@ -1,0 +1,105 @@
+.cuadrado {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #424141;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+  border: rgb(255, 255, 255) 1px solid;
+}
+
+.cuadrado-grupo-0 {
+  background-color: #B4B5B5;
+}
+
+.cuadrado-grupo-1 {
+  background-color: #D72F37;
+}
+
+.cuadrado-grupo-2 {
+  background-color: #AEE0FA;
+}
+
+.cuadrado-grupo-3 {
+  background-color: #F89734;
+}
+
+.cuadrado-grupo-4 {
+  background-color: #D94AA7;
+}
+
+.cuadrado-grupo-5 {
+  background-color: #08A64D;
+}
+
+.cuadrado-grupo-6 {
+  background-color: #FED702;
+}
+
+.cuadrado-grupo-7 {
+  background-color: #955436;
+}
+
+.cuadrado-grupo-8 {
+  background-color: #AEE0FA;
+}
+
+.cuadrado-grupo-9 {
+  background-color: #B4B5B5;
+}
+
+.cuadrado-grupo-10 {
+  background-color: #955436;
+}
+
+.jugadores-en-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.jugadores-en-area p {
+  margin: 0;
+  font-size: 10px;
+  color: black;  /* Color del texto */
+  border: 1px solid black; /* Borde del texto */
+  padding: 2px 5px; /* Espaciado interno */
+  background-color: #ffffff; /* Fondo del texto */
+  border-radius: 3px; /* Esquinas redondeadas del borde */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+@media (max-width: 768px) {
+  .cuadrado {
+    width: 80px;  
+    height: 80px;
+  }
+
+  .cuadrado-nombre {
+    font-size: 12px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .cuadrado {
+    width: 60px;  
+    height: 60px; 
+  }
+
+  .cuadrado-nombre {
+    font-size: 10px; 
+  }
+}
+

@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100vh;
+}
+
+.player {
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: center; 
+    /* align-items: center; Centra horizontalmente */
+    /* min-height: 100vh; */
+    /* width: 175vh;  */
+    background-color: #D5DCF6;
+    /* padding: 0 5vh; Añade márgenes laterales */
+    margin-top: 3%;
+}
+
+.formulario-container {
+    margin: 9%; 
+    max-width: 400px; 
+    width: 100%;
+    padding: 2rem; /* Añade espacio alrededor del formulario */
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Añade esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.form-group {
+    margin: 0.8rem; 
+}
+
+h2 {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    margin-bottom: 1rem; /* Espacio inferior */
+}
+
+label {
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 0.5rem; /* Espaciado interior */
+    margin-bottom: 1rem; /* Espacio inferior */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 4px; /* Esquinas redondeadas */
+}
+
+button {
+    display: inline-block;
+    background-color: #597bc4; /* Color de fondo del botón */
+    color: #fff; /* Color de texto */
+    border: none; /* Sin borde */
+    padding: 0.5rem 1rem; /* Espaciado interior */
+    cursor: pointer; /* Cursor de puntero al pasar el ratón */
+    border-radius: 4px; /* Esquinas redondeadas */
+}
+
+button:hover {
+    background-color: #2b56b3; 
+}
+
+
+.error {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ff4d4d; /* red */
+    border-radius: 5px;
+    color: #ff4d4d; /* red */
+    background-color: #ffe6e6; /* light red */
+    text-align: center;
+}
+
+.successMsg {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #5cff4d; /* green */
+    border-radius: 5px;
+    color: #2aff86; /* green */
+    background-color: #e9ffe6; /* light green */
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white; /* Color de fondo */
+    color: #555; /* Color de texto */
+}
+
+select:hover {
+    border-color: #597bc4; /* Color del borde al pasar el ratón */
+}
+
+select:focus {
+    outline: none; /* Quita el contorno al estar enfocado */
+    border-color: #597bc4; /* Cambia el color del borde al estar enfocado */
+}

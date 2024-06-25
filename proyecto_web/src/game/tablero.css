@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.tablero {
+  padding: 20px;
+  text-align: center;
+  background-color: #D5DCF6;
+  min-width: 185vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  /* width: 100%;
+  height: 100%; */
+  
+}
+
+.board-image {
+  width: 370px; 
+  height: 370px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+.info-container {
+  flex: 1;
+  margin: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 50vh;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #597bc4;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a8ae6;
+}
+
+.info-section {
+  background-color: #eef2f7;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.game-details {
+  background-color: #f0f4f8;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.player-details {
+  background-color: #f0f4f8;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.player-card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: calc(33% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.player-card p {
+  margin: 5px 0;
+}
+
+.current-player {
+  border-color: #5a8ae6;
+  background-color: #E3F2FD;
+}
+
+.character {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+@media (max-width: 800px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .player-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .board-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
